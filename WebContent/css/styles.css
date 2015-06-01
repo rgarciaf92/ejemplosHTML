@@ -1,0 +1,322 @@
+/*
+	version: 1.0
+	author:  Raul Garcia Fonseca
+	date:	 20150518
+*/
+
+/* RESET 
+	Resetear todos los estilos para cualquier navegador */
+ @import url("reset.css");
+
+/* ETIQUETAS 
+	Dar un estilo o una base general a toda la WEB */
+	
+body {
+	background-image: url("../img/back.jpg");
+}	
+	
+h1{
+	text-align: center;
+  	font-size: 40px;
+ 	min-height: 30px;
+}
+ 
+p{
+	font-family: arial;
+	font-size: 16px;
+	text-align:justify;
+	line-height: 20px;
+}
+
+strong{
+	font-weight: bold;
+	color: black;
+}
+
+a{
+	text-decoration: none;
+}
+ 
+a:hover {
+	color:orange;
+}
+
+ol, ul {
+	list-style-type: disc;
+}
+
+li{ 
+	margin-bottom:8px;
+}
+
+ol h3, ul h3 {
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+
+ol ol, ul ul{
+	margin-left:20px;
+	list-style-type: circle;
+}
+
+fieldset{
+	border: 1px solid grey;
+  	padding: 20px 30px;
+  	margin-bottom: 20px;
+}
+
+legend{
+	font-weight: bold;
+}
+
+article {
+	border: 1px solid #013720;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+article h1 {
+	background-color: green;
+	color: red;
+	font-size: 25px;
+	padding: 5px 0;
+}
+
+h4 {
+	margin-bottom: 8px;
+}
+
+
+/* validaciones con formularios*/
+
+form input[type="text"]:required:valid{
+	border-color:#1C7766;
+}
+
+form input[type="text"]:focus:required:invalid{
+	border-color: red;
+}
+
+#home {
+	min-height:400px;
+	margin-top: 20px;
+}
+
+figure img{
+	height:100px;
+	width:100px;
+}
+
+ 
+/* Regla con selector por ID */
+
+#crisantemo{
+	width: 400px;
+	height: 250px;
+}
+
+#ficha{
+	float: left;
+	width: 620px;
+	min-height: 328px;
+	margin-bottom: 20px;
+}
+ 
+#ficha p{
+	font-size: 20px;
+	line-height: 45px;
+}
+ 
+#ficha .destacado {
+	color: green;
+	font-weight: bold;
+}
+ 
+#sinopsis{
+	float: left;
+	height: 150px;
+	overflow: scroll;
+}
+#container{
+	width:900px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	margin: 0 auto;
+	padding: 5px 20px 5px 20px;
+	min-height: 620px;
+	background-color: white;
+}
+
+#fondo {
+	background-color:white;
+	border: 1px solid black;
+}
+
+/* CLASES
+	Regla con selector por clases para usar en todas las paginas */
+		
+
+table.tabla_azul, .tabla_azul tr, .tabla_azul td{
+	border:1px solid grey;
+	text-align: center;
+	font-family: arial;
+	font-size: 35px;  
+	color: #0099FF;    
+}
+
+.tabla_azul th, .tabla_azul td {
+	padding: 10px;  
+	height: 40px;
+}
+
+.tabla_azul th{
+	color: #0099FF;	
+}
+
+.blanco {
+	background-color: white;
+	width: 200px;
+}
+.numero{
+	color: #00ffcc;
+	font-family: arial;
+	font-size: 30px;
+}
+ .encabezado {
+	border: 1px solid green;
+	background-color: white;
+ }
+ 
+ .highlight{
+	background-color: yellow;
+ }
+
+ .titulo{
+	border:1px solid black;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+ }
+.centrado {
+	text-align: center;
+}
+
+.display{
+	cellspacing: 0px;
+	width:100%;
+}
+
+.vid{
+	width: 300px;
+	height: 300px;
+}
+
+#circulo {
+	width:200px;
+	height: 100px;
+	border: 1px solid blue;
+}
+ 
+ /* PAGINAS
+	Tendremos una seccion por cada pagina */
+ 
+ /* INDEX */
+#btn_ganador {
+	background-image: url("../img/dado.png");
+	width:35px;
+	height: 35px;
+}
+
+/* FOOTER */
+#list_rrss .peq {
+	width: 20px;
+	height:20px;
+}
+ 
+ /* PARRAFOS */
+ 
+#parrafo .parrafos {
+	overflow:scroll;
+	height: 450px;
+	margin-top: 10px;
+}
+
+#parrafo .encabezado h1 {
+	text-align:left;
+	font-size:30px;
+}
+
+/* TABLAS */
+#tabla td:hover {
+	background-color: red;
+}
+ 
+ /* CARTELERA */
+ 
+ #cartelera ul {
+	list-style-type: none;
+ }
+ 
+ #cartelera li {
+	background-color: blue;
+	border: 1px solid white;
+	height: 204px;
+	margin-bottom: 10px;
+	margin-right: 40px;
+ }
+ 
+ #cartelera li:hover {
+	background-color: yellow;
+	margin-right: 40px;
+ }
+ 
+ #cartelera img{
+	float: left;
+	margin-right: 14px;
+	margin-left: 15px;
+ }
+ 
+ #cartelera .dch {
+	width: 462px;
+	min-height:175px;
+	color: white;
+ }
+ 
+ /* CARTELERA_DETALLE */
+ #cartelera_detalle h1 {
+	color:blue;
+	text-align: left;
+ }
+ 
+#cartelera_detalle img {
+	float:left;
+	margin-right: 30px;
+	width: 250px;
+	height: auto;
+}
+
+#cartelera_detalle {
+    height: 568px;
+}
+
+/* NAV */
+#logo img{
+	width: 35px;
+	height: 35px;
+	float:left;
+}
+
+/* DATOS_PERSONALES */
+
+input {
+	padding: 2px 4px 2px;
+  	margin-top: 4px;
+  	margin-bottom: 3px;
+}
+
+form .der{
+	margin-left:15px;
+	margin-top: 3px;
+}
+
+ 
