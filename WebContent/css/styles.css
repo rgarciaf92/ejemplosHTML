@@ -80,11 +80,9 @@ article h1 {
 	color: red;
 	font-size: 25px;
 	padding: 5px 0;
+	margin-bottom: 5px;
 }
 
-h4 {
-	margin-bottom: 8px;
-}
 
 
 /* validaciones con formularios*/

@@ -153,6 +153,41 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<h4>Posicionamiento</h4>
+					<ul>
+						<li>
+							<a href="ejemplos/css/posicionamiento/normal.jsp" title="Posicionamiento normal">
+							Posicionamiento Normal
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/posicionamiento/relativo.jsp" title="Posicionamiento relativo">
+							Posicionamiento Relativo
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/posicionamiento/absoluto.jsp" title="Posicionamiento absoluto">
+							Posicionamiento Absoluto
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/posicionamiento/fijo.jsp" title="Posicionamiento fijo">
+							Posicionamiento Fijo
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/posicionamiento/inherit.jsp" title="Posicionamiento inherit">
+							Posicionamiento Inherit
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/posicionamiento/float.jsp" title="Elementos Flotantes">
+							Elementos Flotantes
+							</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</li>
 	</ul>
