@@ -1,7 +1,7 @@
 <jsp:include page="../../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
-<main id="pseudo_clases">
+<main id="pseudo_clases" class="abajo_menu">
 	<style>
 		p mark:first-child{
 			color:green;

@@ -1,7 +1,7 @@
 <jsp:include page="../../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
-<main id="pseudo_elementos">
+<main id="pseudo_elementos" class="abajo_menu">
 	<style>
 		p:first-line {
 			font-size:20px;

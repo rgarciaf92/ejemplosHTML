@@ -1,12 +1,15 @@
 <jsp:include page="plantillas/head.jsp"></jsp:include>
 <jsp:include page="plantillas/nav.jsp"></jsp:include>
 
-<div id="home">
+<div id="home" class="clearfix">
 	<!-- El contenido principal de la pagina -->
 	<section>
+		<div class="clearfix">
 		<h2>El afortunado en leer es:</h2>
+		<div class="clearfix">
+			<input type="button" value="Generar Lector" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" />
+		</div>
 		<label for="btn_ganador" id="afortunado" class="numero">Afortunad@</label>
-		<input type="image" src="img/dado.png" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" alt="Dado"/>
 		<table class="tabla_azul">
 		  <tr>
 			<td colspan=4 id="a0">Profe</td>
@@ -36,10 +39,11 @@
 			<td id= "a15">Mikel</td>
 		  </tr>
 		</table>
+	</div>
 	</section>
 
 	<!-- Sidebar con contenido no principal de la pagina -->
-	<aside class="asi">
+	<aside class="cent">
 		<h2>Enlaces de interes</h2>
 		<ul>
 			<li><a href="http://www.formacion.ipartek.com/campus/" target="_blank">Campus Ipartek</a></li>

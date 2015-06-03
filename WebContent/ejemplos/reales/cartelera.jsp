@@ -1,32 +1,162 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="cartelera">
+<div id="cartelera" class="abajo_menu">
 	<h1>Cartelera</h1>
+	<div class="clearfix">
+	<h2>CINESA</h2>
 	<ul>
 		<li>
-			<div>
-				<a href="cartelera_detalle.html" title="Los Vengadores">
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
 					<img alt="Los Vengadores" src="img/peli1.jpg"/>
 				</a>
 				<div class="dch">
-					<p><strong>Pelicula: </strong>Los Vengadores: La Era de Ultron</p>
-					<p><strong>Duración: </strong>141min.</p>
+					<p><strong>Pelicula: </strong>Los Vengadores: La Era de Ultr&oacute;n</p>
+					<p><strong>Duraci&oacute;n: </strong>141min.</p>
 					<p><strong>Actor: </strong>Robert Downey Jr.</p>
 				</div> <!-- .dch -->
 			</div>
 		</li>
 		<li>
-			<div>
-				<img alt="Los Vengadores" src="img/peli2.jpg"/>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
 				<div class="dch">
 					<p><strong>Pelicula: </strong>Mad Max</p>
-					<p><strong>Duración: </strong>120min.</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div class="clearfix">
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
 					<p><strong>Actor: </strong>Tom Hardy</p>
 				</div> <!-- .dch -->
 			</div>
 		</li>
 	</ul>
+	</div>
+	<div class="clearfix">
+	<h2>YELMO</h2>
+	<ul>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli1.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Los Vengadores: La Era de Ultr&oacute;n</p>
+					<p><strong>Duraci&oacute;n: </strong>141min.</p>
+					<p><strong>Actor: </strong>Robert Downey Jr.</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div class="clearfix">
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+		<li>
+			<div class="clearfix">
+				<a href="ejemplos/reales/cartelera_detalle.jsp" title="Los Vengadores">
+					<img alt="Los Vengadores" src="img/peli2.jpg"/>
+				</a>
+				<div class="dch">
+					<p><strong>Pelicula: </strong>Mad Max</p>
+					<p><strong>Duraci&oacute;n: </strong>120min.</p>
+					<p><strong>Actor: </strong>Tom Hardy</p>
+				</div> <!-- .dch -->
+			</div>
+		</li>
+	</ul>
+	</div>
 </div> <!-- #cartelera -->
 
 <jsp:include page="../../plantillas/footer.jsp"></jsp:include>

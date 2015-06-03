@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<main id="progess">
+<main id="progess" class="abajo_menu">
 	<h1>Progress & Meter</h1>
 	
 	<a href="http://peter.sh/examples/?/html/meter-progress.html">Ejemplo</a>

@@ -1,7 +1,7 @@
 <jsp:include page="../../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
-<main id="selector_hijos">
+<main id="selector_hijos" class="abajo_menu">
 	<style>
 		div + p{
 			color:red;

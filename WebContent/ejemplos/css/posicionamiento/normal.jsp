@@ -1,8 +1,9 @@
 <jsp:include page="../../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
-<main id="pos_normal">
+<main id="pos_normal" class="abajo_menu">
 	<section>
+		<div id="clearfix">
 		<h2>Posicionamiento en CSS</h2>
 		<article>
 			<header>
@@ -34,6 +35,7 @@
 				Capitulo 9; pagina 198
 			</footer>
 		</article>
+		</div>
 	</section>
 </main>
 

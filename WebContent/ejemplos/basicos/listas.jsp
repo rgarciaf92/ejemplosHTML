@@ -1,6 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
+<div id="listas" class="abajo_menu"></div>
 <h1>Ejemplo listas</h1>
 
 <div id="fondo">

@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<main id="time">
+<main id="time" class="abajo_menu">
 	<h1>Time</h1>
 	
 	<!-- Time con el atributo datetime que determina una fecha y hora concreta -->

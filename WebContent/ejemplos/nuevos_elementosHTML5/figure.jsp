@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<main id="figure">
+<main id="figure" class="abajo_menu">
 	<h1>Figure</h1>
 	
 	<!-- Figure de una sola imagen -->

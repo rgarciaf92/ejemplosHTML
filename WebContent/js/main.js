@@ -4,10 +4,10 @@
 */
 
 //Esto se ejecuta cuando todo el html se ha cargado
-$(function() {
-	console.debug("Document Ready!");
-    $( "#lista_select" ).combobox();
-  });
+//$(function() {
+//	console.debug("Document Ready!");
+//    $( "#lista_select" ).combobox();
+//  });
 
 
 

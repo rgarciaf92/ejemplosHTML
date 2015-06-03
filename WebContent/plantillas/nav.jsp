@@ -1,5 +1,6 @@
 <nav>
-	<ul>
+	<div class="clearfix">
+	<ul class="nave">
 		<li>
 			<h3>B&aacute;sicos</h3>
 			<ul>
@@ -191,4 +192,6 @@
 			</ul>
 		</li>
 	</ul>
+</div>
 </nav>
+</header>

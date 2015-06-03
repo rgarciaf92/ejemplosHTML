@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="cartelera_detalle">
+<div id="cartelera_detalle" class="abajo_menu">
 	
 	<!-- Bloque de título -->
 	<div class="titulo">

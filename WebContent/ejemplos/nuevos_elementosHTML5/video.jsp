@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<main id="video">
+<main id="video" class="abajo_menu">
 	<h1>Video</h1>
 	
 	<video class="vid" controls>

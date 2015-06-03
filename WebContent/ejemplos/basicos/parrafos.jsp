@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<div id="parrafo">
+<div id="parrafo" class="abajo_menu">
 	<h1>Párrafos y Enlaces Internos</h1>
 	
 	<!-- Para que te vaya el enlace local sin necesidad de poner todo el enlace completo -->

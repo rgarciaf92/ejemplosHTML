@@ -1,7 +1,7 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<main id="hgroup">
+<main id="hgroup" class="abajo_menu">
 	<h1>Hgroup</h1>
 <article>
 	<hgroup>

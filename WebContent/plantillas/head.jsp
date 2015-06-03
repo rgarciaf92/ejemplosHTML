@@ -32,11 +32,13 @@
 	
 		<div id="container">
 			<!-- Header con el dado y el h1 del titulo	 -->
-			<header>
-				<div id="logo">
-					<a href="index.jsp" title="Volver a la pagina principal">
-						<img src="img/dado.png" alt="Dado"/>
-					</a>
-					<h1>Ejemplos HTML5, CSS3 y JS</h1>
-				</div>	
-			</header>
+			<header id="head">
+				<div class="clearfix">
+					<div id="logo">
+						<a href="index.jsp" title="Volver a la pagina principal">
+							<img src="img/dado.png" alt="Dado"/>
+						</a>
+						<h1>Ejemplos HTML5, CSS3 y JS</h1>
+					</div>	
+				</div>
+			<!-- Navegacion menu principal -->
