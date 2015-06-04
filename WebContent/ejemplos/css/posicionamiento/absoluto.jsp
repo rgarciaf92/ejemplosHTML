@@ -2,7 +2,7 @@
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
 <main id="pos_absoluto" class="abajo_menu">
-	<section>
+	<section class="clearfix">
 		<h2>Posicionamiento en CSS</h2>
 		<style>
 			/*	Contenedor posicionado de forma relativa para que el div#capa2 pueda

@@ -2,10 +2,7 @@
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
 <main id="pos_inherit" class="abajo_menu">
-	<style>
-
-	</style>
-	<section>
+	<section class="clearfix">
 		<h2>Posicionamiento en CSS</h2>
 		<article>
 			<header>

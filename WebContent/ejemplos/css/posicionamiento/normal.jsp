@@ -2,7 +2,7 @@
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
 <main id="pos_normal" class="abajo_menu">
-	<section>
+	<section class="clearfix">
 		<div id="clearfix">
 		<h2>Posicionamiento en CSS</h2>
 		<article>

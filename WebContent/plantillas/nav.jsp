@@ -189,6 +189,21 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<h4>Tecnicas Avanzadas</h4>
+					<ul>
+						<li>
+							<a href="ejemplos/css/tecnicas_avanzadas/icon_fonts.jsp" title="Icon Fonts">
+							Icon Fonts
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/css/tecnicas_avanzadas/sprites.jsp" title="Posicionamiento normal">
+							Sprites
+							</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</li>
 	</ul>

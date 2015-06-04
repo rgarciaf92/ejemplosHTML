@@ -6,40 +6,42 @@
 
 /* RESET 
 	Resetear todos los estilos para cualquier navegador */
- @import url("reset.css");
+@import url("reset.css");
 
 /* ETIQUETAS 
 	Dar un estilo o una base general a toda la WEB */
-	
 body {
 	background-image: url("../img/back.jpg");
-}	
-	
-h1{
-	text-align: center;
-  	font-size: 40px;
- 	min-height: 30px;
 }
- 
-p{
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	min-height: 30px;
+}
+
+p {
 	font-family: arial;
 	font-size: 16px;
-	text-align:justify;
+	text-align: justify;
 	line-height: 20px;
 }
 
-strong{
+strong {
 	font-weight: bold;
 	color: black;
 }
 
-a{
+a {
 	text-decoration: none;
 }
- 
+
 a:hover {
-	color:orange;
+	color: orange;
 }
+
+/* Recomendable para diseño de impresión */
+/*a:hover:after { content: " (" attr(href) ") "; }*/
 
 /* ol, ul { */
 /* 	list-style-type: disc; */
@@ -54,19 +56,17 @@ a:hover {
 /* 	margin-bottom:15px; */
 /* } */
 
-
 /* ol ol, ul ul{ */
 /* 	margin-left:20px; */
 /* 	list-style-type: circle; */
 /* } */
-
-fieldset{
+fieldset {
 	border: 1px solid grey;
-  	padding: 20px 30px;
-  	margin-bottom: 20px;
+	padding: 20px 30px;
+	margin-bottom: 20px;
 }
 
-legend{
+legend {
 	font-weight: bold;
 }
 
@@ -75,6 +75,7 @@ article {
 	padding: 20px;
 	margin-bottom: 25px;
 }
+
 article h1 {
 	background-color: green;
 	color: red;
@@ -83,55 +84,51 @@ article h1 {
 	margin-bottom: 5px;
 }
 
-
-
 /* validaciones con formularios*/
-
-form input[type="text"]:required:valid{
-	border-color:#1C7766;
+form input[type="text"]:required:valid {
+	border-color: #1C7766;
 }
 
-form input[type="text"]:focus:required:invalid{
+form input[type="text"]:focus:required:invalid {
 	border-color: red;
 }
 
 #home {
-	min-height:400px;
-	padding-top:13%;
+	min-height: 400px;
+	padding-top: 13%;
 }
 
-figure img{
-	height:100px;
-	width:100px;
+figure img {
+	height: 100px;
+	width: 100px;
 }
 
- 
 /* Regla con selector por ID */
-
-#ficha{
+#ficha {
 	float: left;
 	width: 620px;
 	min-height: 328px;
 	margin-bottom: 20px;
 }
- 
-#ficha p{
+
+#ficha p {
 	font-size: 20px;
 	line-height: 45px;
 }
- 
+
 #ficha .destacado {
 	color: green;
 	font-weight: bold;
 }
- 
-#sinopsis{
+
+#sinopsis {
 	float: left;
 	height: 150px;
 	overflow: scroll;
 }
-#container{
-	width:900px;
+
+#container {
+	width: 900px;
 	border-right: 1px solid grey;
 	border-left: 1px solid grey;
 	margin: 0 auto;
@@ -141,32 +138,31 @@ figure img{
 }
 
 #fondo {
-	background-color:white;
+	background-color: white;
 	border: 1px solid black;
 }
 
 /* CLASES
 	Regla con selector por clases para usar en todas las paginas */
-		
-
-table.tabla_azul, .tabla_azul tr, .tabla_azul td{
-	border:1px solid grey;
+table.tabla_azul, .tabla_azul tr, .tabla_azul td {
+	border: 1px solid grey;
 	text-align: center;
 	font-family: arial;
-	font-size: 35px;  
-	color: #0099FF;    
+	font-size: 35px;
+	color: #0099FF;
 }
 
 .tabla_azul th, .tabla_azul td {
-	padding: 10px;  
+	padding: 10px;
 	height: 40px;
 }
 
-.tabla_azul th{
-	color: #0099FF;	
+.tabla_azul th {
+	color: #0099FF;
 }
+
 .tabla_azul {
-	margin-top:5%;
+	margin-top: 5%;
 	margin-bottom: 3%;
 }
 
@@ -174,52 +170,55 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 	background-color: white;
 	width: 200px;
 }
-.numero{
+
+.numero {
 	color: #00ffcc;
 	font-family: arial;
-	font-size:50px;
+	font-size: 50px;
 	display: block;
-	text-align:center;
+	text-align: center;
 }
- .encabezado {
+
+.encabezado {
 	border: 1px solid green;
 	background-color: white;
- }
- 
- .highlight{
-	background-color: yellow;
- }
+}
 
- .titulo{
-	border:1px solid black;
+.highlight {
+	background-color: yellow;
+}
+
+.titulo {
+	border: 1px solid black;
 	text-align: center;
 	font-size: 40px;
 	margin-bottom: 20px;
- }
+}
+
 .centrado {
 	text-align: center;
 }
 
-.display{
+.display {
 	cellspacing: 0px;
-	width:100%;
+	width: 100%;
 }
 
-.vid{
+.vid {
 	width: 300px;
 	height: 300px;
 }
 
 #circulo {
-	width:200px;
+	width: 200px;
 	height: 100px;
 	border: 1px solid blue;
 }
- 
- /* PAGINAS
+
+/* PAGINAS
 	Tendremos una seccion por cada pagina */
- 
- /* INDEX */
+
+/* INDEX */
 #btn_ganador {
 	background: #3498db;
 	background-image: -webkit-linear-gradient(top, #3498db, #7cafcf);
@@ -252,110 +251,119 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 /* FOOTER */
 #list_rrss .peq {
 	width: 20px;
-	height:20px;
+	height: 20px;
 }
- 
- /* PARRAFOS */
- 
+
+/* PARRAFOS */
 #parrafo .parrafos {
-	overflow:scroll;
+	overflow: scroll;
 	height: 450px;
 	margin-top: 10px;
 }
 
 #parrafo .encabezado h1 {
-	text-align:left;
-	font-size:30px;
+	text-align: left;
+	font-size: 30px;
 }
 
 /* TABLAS */
 #tabla td:hover {
 	background-color: red;
 }
- 
- /* CARTELERA */
- 
- #cartelera ul {
+
+/* CARTELERA */
+#cartelera li:nth-child(3n+0) {
+	margin-right: 0;
+}
+
+#cartelera ul {
 	list-style-type: none;
- }
- 
- #cartelera li {
+}
+
+#cartelera li {
 	background-color: white;
 	min-height: 120px;
 	margin-bottom: 10px;
 	margin-right: 30px;
-	float:left;
-	position:relative;
- }
- 
- #cartelera li:hover {
-	background-color: white;
- }
- 
- #cartelera li:hover .dch {
- 	display:block;
- }
- #cartelera li .dch {
- 	display: none;
- 	margin-top: -80px;
- }
- 
- #cartelera h1  {
- 	margin-bottom: 10px;
- }
- 
- #cartelera img{
-	height: 383px;
- }
- 
- #cartelera .dch {
-	min-height:80px;
+	float: left;
+	position: relative;
+}
+
+#cartelera li .dch {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	padding-left: 2px;
+	margin-top: -125px;
+	min-height: 80px;
 	width: 265px;
 	color: white;
- }
- #cartelera div h2 {
- 	text-align: center;
- 	font-size: 30px;
- 	background-color: grey;
- 	margin-right: 40px;
- 	margin-bottom: 10px;
- }
- #cartelera li p {
- 	text-align: center;
- }
- #cartelera li strong {
- 	color:white;
- }
- 
- /* CARTELERA_DETALLE */
- #cartelera_detalle h1 {
-	color:blue;
+}
+
+#cartelera li:hover .dch {
+	display: block;
+}
+
+#cartelera li:hover p, #cartelera li:hover strong {
+	display: block;
+}
+
+#cartelera h1 {
+	margin-bottom: 10px;
+}
+
+#cartelera img {
+	height: 383px;
+}
+
+#cartelera div h2 {
+	text-align: center;
+	font-size: 30px;
+	background-color: grey;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+#cartelera li p {
+	text-align: center;
+	color: white;
+	display: none;
+	color: white;
+}
+
+#cartelera li p strong {
+	color: white;
+	display: none;
+}
+
+/* CARTELERA_DETALLE */
+#cartelera_detalle h1 {
+	color: blue;
 	text-align: left;
- }
- 
+}
+
 #cartelera_detalle img {
-	float:left;
+	float: left;
 	margin-right: 30px;
 	width: 250px;
 	height: auto;
 }
 
 #cartelera_detalle {
-    height: 568px;
+	height: 568px;
 }
 
 /* NAV */
-#logo img{
+#logo img {
 	width: 35px;
 	height: 35px;
-	float:left;
+	float: left;
 }
 
 #logo h1 {
-	width:92%;
+	width: 92%;
 }
 /* DATOS_PERSONALES */
-
 input {
 	float: left;
 	margin-left: 23%;
@@ -363,8 +371,8 @@ input {
 	margin-top: 5%;
 }
 
-form .der{
-	margin-left:15px;
+form .der {
+	margin-left: 15px;
 	margin-top: 3px;
 }
 
@@ -386,55 +394,58 @@ form .der{
 }
 
 .cabecera_menu {
-	padding-top:5px;
+	padding-top: 5px;
 }
 
-.cent{
-	float:right;
+.cent {
+	float: right;
 	width: 40%;
+	padding-bottom: 43%
 }
 
 .cent h2 {
-	text-align:center;
+	text-align: center;
 	font-size: 20px;
 	margin-bottom: 2%;
 }
 
-.cent ol, ul{
+.cent ol, ul {
 	text-align: center;
 }
+
 #list_rrss {
-	text-align:left;
+	text-align: left;
 }
+
 .blanco {
 	background-color: white;
 }
-section {
-	float:left;
+
+#dados {
+	float: left;
 }
 
-section h2 {
+#dados h2 {
 	font-family: arial;
 	font-size: 15px;
 	text-align: center;
 }
 
 #head {
-	position:fixed;
+	position: fixed;
 	background-color: white;
 	z-index: 2;
 }
 
 #head #logo, #head h1 {
-	float:left;
+	float: left;
 }
 
 .espacio {
-	margin-top:5px;
+	margin-top: 5px;
 }
 
-/*NAVEGADOR*/	
-	
+/*NAVEGADOR*/
 .nave h3, .nave h4, .nave li a {
 	background-color: #000;
 	color: #FFF;
@@ -455,7 +466,8 @@ section h2 {
 	background-color: orange;
 	color: black;
 }
-.nave > li {
+
+.nave>li {
 	float: left;
 }
 
@@ -464,13 +476,13 @@ section h2 {
 }
 
 .nave li ul {
-	display:none;
+	display: none;
 	position: absolute;
-	min-width:160px;
+	min-width: 160px;
 }
 
-.nave li:hover > ul{
-	display:block;
+.nave li:hover>ul {
+	display: block;
 }
 
 .nave li ul li {
@@ -484,16 +496,42 @@ section h2 {
 
 nav {
 	position: fixed;
-  	margin-top: 5%;
-  	background-color: white;
-  	z-index: 2;
-  	padding-right: 15%;
-  	padding-left: 16%;
+	margin-top: 5%;
+	background-color: white;
+	z-index: 2;
+	padding-right: 15%;
+	padding-left: 16%;
+}
+
+/*CLEARFIX*/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
 }
 
 
-/*CLEARFIX*/
 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+
+/* FONTAWESOME(Icon Fonts) */
+
+#icon_fonts .peq {
+	font-size: 20px;
+}
+
+#icon_fonts .med {
+	font-size: 20px;
+	color: blue;
+}
+
+#icon_fonts .grande {
+	font-size: 20px;
+	color:red;
+}

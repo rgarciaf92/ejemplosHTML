@@ -3,7 +3,7 @@
 
 <div id="home" class="clearfix">
 	<!-- El contenido principal de la pagina -->
-	<section>
+	<section id="dados">
 		<div class="clearfix">
 		<h2>El afortunado en leer es:</h2>
 		<div class="clearfix">
