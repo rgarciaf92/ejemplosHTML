@@ -199,7 +199,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	text-align: center;
 }
 
-.display {
+.display_table {
 	cellspacing: 0px;
 	width: 100%;
 }
@@ -399,8 +399,9 @@ form .der {
 
 .cent {
 	float: right;
-	width: 40%;
-	padding-bottom: 43%
+	width: 37%;
+	padding-bottom: 40%;
+	padding-top: 3%; 
 }
 
 .cent h2 {
@@ -423,6 +424,7 @@ form .der {
 
 #dados {
 	float: left;
+	padding: 3%;
 }
 
 #dados h2 {
@@ -515,23 +517,4 @@ nav {
 
 .clearfix {
 	*zoom: 1;
-}
-
-
-
-
-/* FONTAWESOME(Icon Fonts) */
-
-#icon_fonts .peq {
-	font-size: 20px;
-}
-
-#icon_fonts .med {
-	font-size: 20px;
-	color: blue;
-}
-
-#icon_fonts .grande {
-	font-size: 20px;
-	color:red;
 }

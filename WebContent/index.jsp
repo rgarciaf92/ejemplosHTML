@@ -2,6 +2,9 @@
 <jsp:include page="plantillas/nav.jsp"></jsp:include>
 
 <div id="home" class="clearfix">
+
+	<span class="icon-box fa-5x"></span>
+	
 	<!-- El contenido principal de la pagina -->
 	<section id="dados">
 		<div class="clearfix">

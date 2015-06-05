@@ -1,12 +1,11 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
-<link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
 <link rel="stylesheet" type="text/css" href="js/DataTables-1.10.7/css/jquery.dataTables.min.css">
 
 <div id="datab" class="abajo_menu">
 	<h1>dataTables</h1>
-	<table id="tabla_plugin" class="display">
+	<table id="tabla_plugin" class="display_table">
 		<thead>
 			<tr>
 				<th>Name</th>
@@ -494,35 +493,35 @@
 <script src="js/DataTables-1.10.7/js/jquery.dataTables.min.js"></script>
 
 <script>
-	<!-- Esta funcion se cargara cuando el documento este cargado -->
-	$(document).ready(function() {
-		$('#tabla_plugin').DataTable({ <!-- La almohadilla es el .getDocumentById -->
-		"language": {
-			"sProcessing":     "Procesando...",
-			"sLengthMenu":     "Mostrar _MENU_ registros",
-			"sZeroRecords":    "No se encontraron resultados",
-			"sEmptyTable":     "Ningún dato disponible en esta tabla",
-			"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-			"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-			"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-			"sInfoPostFix":    "",
-			"sSearch":         "Buscar:",
-			"sUrl":            "",
-			"sInfoThousands":  ",",
+<!-- Esta funcion se cargara cuando el documento este cargado -->
+ 	$(document).ready(function() {
+ 		$('#tabla_plugin').DataTable ({ 
+ 		"language": {
+ 			"sProcessing":     "Procesando...",
+ 			"sLengthMenu":     "Mostrar _MENU_ registros",
+ 			"sZeroRecords":    "No se encontraron resultados",
+ 			"sEmptyTable":     "Ningún dato disponible en esta tabla",
+ 			"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+ 			"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+ 			"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+ 			"sInfoPostFix":    "",
+ 			"sSearch":         "Buscar:",
+ 			"sUrl":            "",
+ 			"sInfoThousands":  ",",
 			"sLoadingRecords": "Cargando...",
-			"oPaginate": {
-				"sFirst":    "Primero",
-				"sLast":     "Último",
-				"sNext":     "Siguiente",
-				"sPrevious": "Anterior"
-			},
-			"oAria": {
-				"sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+ 			"oPaginate": {
+ 				"sFirst":    "Primero",
+ 				"sLast":     "Último",
+ 				"sNext":     "Siguiente",
+ 				"sPrevious": "Anterior"
+ 			},
+ 			"oAria": {
+ 				"sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
 				"sSortDescending": ": Activar para ordenar la columna de manera descendente"
-			}
-		}
-		}); 
-	} );
-</script>
+ 			}
+ 		}
+ 		}); 
+ 	} );
+</script> 
 
 <jsp:include page="../../plantillas/footer.jsp"></jsp:include>

@@ -14,6 +14,12 @@
 	  <meta name="author" content="Raul Garcia Fonseca">
 	  <link rel="stylesheet" href="css/styles.css?v=1.0">
 	  
+	  <!-- FontAwesome -->
+	  <link rel="stylesheet" href="font/FontAwesome_4.3.0/css/font-awesome.min.css">
+	  
+	  <!-- Custom IcoMoon -->
+	  <link rel="stylesheet" href="font/iconmoon/style.css">
+	  
 	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
