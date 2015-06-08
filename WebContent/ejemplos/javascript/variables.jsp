@@ -75,7 +75,7 @@
 								resultado = parametro1;
 								break;
 							case 6: // DECREMENTO
-								parametro1--
+								parametro1--;
 								resultado = parametro1;
 								break;
 							case 7: //ES_PAR
