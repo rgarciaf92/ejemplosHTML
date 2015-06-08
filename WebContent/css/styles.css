@@ -70,6 +70,7 @@ legend {
 	font-weight: bold;
 }
 
+
 article {
 	border: 1px solid #013720;
 	padding: 20px;
@@ -364,7 +365,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	width: 92%;
 }
 /* DATOS_PERSONALES */
-input {
+.btn_cent{
 	float: left;
 	margin-left: 23%;
 	margin-bottom: 2%;
@@ -501,8 +502,8 @@ nav {
 	margin-top: 5%;
 	background-color: white;
 	z-index: 2;
-	padding-right: 15%;
-	padding-left: 16%;
+	padding-right: 10%;
+	padding-left: 13%;
 }
 
 /*CLEARFIX*/

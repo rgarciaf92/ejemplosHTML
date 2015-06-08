@@ -206,6 +206,16 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<h3>JavaScript</h3>
+			<ul>
+				<li>
+					<a href="ejemplos/javascript/variables.jsp" title="Variables">
+					Variables
+					</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 </nav>

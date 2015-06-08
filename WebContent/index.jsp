@@ -2,15 +2,13 @@
 <jsp:include page="plantillas/nav.jsp"></jsp:include>
 
 <div id="home" class="clearfix">
-
-	<span class="icon-box fa-5x"></span>
 	
 	<!-- El contenido principal de la pagina -->
 	<section id="dados">
 		<div class="clearfix">
 		<h2>El afortunado en leer es:</h2>
 		<div class="clearfix">
-			<input type="button" value="Generar Lector" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" />
+			<input type="button" value="Generar Lector" id="btn_ganador" name="btn_ganador" onclick="obtener_ganador();" class="btn_cent"/>
 		</div>
 		<label for="btn_ganador" id="afortunado" class="numero">Afortunad@</label>
 		<table class="tabla_azul">
