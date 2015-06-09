@@ -4,7 +4,7 @@
 <div id="dat_pers" class="abajo_menu">
 	<h1>Datos Personales</h1>
 	<form action="ejemplos/formularios/controlador_datos.jsp" method="post">
-		<fieldset>
+		<fieldset class="field_datpers">
 		<legend>Datos Personales</legend>
 			<label for="nombre">*Nombre:</label><br/>
 			<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required

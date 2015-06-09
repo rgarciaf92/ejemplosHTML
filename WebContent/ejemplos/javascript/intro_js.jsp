@@ -146,66 +146,71 @@
 				for(i=0; i<aLetras.length; i++) {
 					console.info(aLetras[i] + ': ' + es_vocal(aLetras[i]));
 				}
-// 				console.info ('"a": ' + es_vocal('a'));
-// 				console.info ('"e": ' + es_vocal('e'));
-// 				console.info ('"A": ' + es_vocal('A'));
-// 				console.info ('13: ' + es_vocal('13'));
-// 				console.info ('null: ' + es_vocal('null'));
-// 				console.info ('undefined: ' + es_vocal('undefined'));
-// 				console.info ('0.5: ' + es_vocal('0.5'));
-// 				console.info ('"and": ' + es_vocal('and'));
-// 				console.info ('"n": ' + es_vocal('n'));
-// 				console.info ('"\u00f1": ' + es_vocal('\u00f1') + '\n\n\n\n\n');
 				
 				
 				/*****************************************
 					CINE DE ALMENDRALEJO (PAG 283)
+				
+					Calcula el precio de la entrada del cine de Almendralejo
+					@param dia: Dia de la semana que queremos ['lunes'...'domingo']
+					@param edad: Edad de la persona que compra la entrada, formato: Numero Entero.
+					@return: precio en euros
 				******************************************/
 				
 				function entradas (dia,edad) {
 					var precio = null;
 					switch (dia) {
-					case 'lunes':
-						if(edad <= 35){
-							precio = 2;
-						} else {
-							precio = 5;
-						}
-					break;
-					case 'martes':
-						if (edad <=25) {
-							precio = 2;
-						} else if (edad < 25 && edad >= 50) {
-							precio = 5;
-						} else {
-							precio = 7;
-						}
-					break;
-					case 'miercoles':
-						if (edad <=18) {
-							precio = 3;
-						} else if (edad < 18 && edad >= 50) {
-							precio = 5;
-						} else {
-							precio = 8;
-						}
-					break;
-					case 'jueves':
-						if (edad <= 18) {
-							precio = 5;
-						} else {
-							precio = 7;
-						}
-					break;
-					case 'viernes':
-					case 'sabado':
-					case 'domingo':
-						precio = 10;
-					break;
-					}
+						case 'lunes':
+							if(edad <= 35){
+								precio = 2;
+							} else {
+								precio = 5;
+							}
+							break;
+						case 'martes':
+							if (edad <=25) {
+								precio = 2;
+							} else if (edad > 25 && edad <= 50) {
+								precio = 5;
+							} else {
+								precio = 7;
+							}
+							break;
+						case 'miercoles':
+							if (edad <=18) {
+								precio = 3;
+							} else if (edad > 18 && edad <= 50) {
+								precio = 5;
+							} else {
+								precio = 8;
+							}
+							break;
+						case 'jueves':
+							if (edad <= 18) {
+								precio = 5;
+							} else {
+								precio = 7;
+							}
+							break;
+						case 'viernes':
+						case 'sabado':
+						case 'domingo':
+							precio = 10;
+							break;
+					}//end switch
 					
 					return precio;
 				}
+				// end function entradas	
+					
+				//testear lunes
+				console.info("lunes <35 años 2€: " + (entradas('lunes',34) == 2));
+				console.info("lunes 35 años 2€: " + (entradas('lunes',35) == 2));
+				console.info("lunes >35 años 5€: " + (entradas('lunes',36) == 5));
+				
+				
+				
+				
 				var i=0;
 				var dia = 'martes';
 				var edad = 43;

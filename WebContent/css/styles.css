@@ -60,7 +60,7 @@ a:hover {
 /* 	margin-left:20px; */
 /* 	list-style-type: circle; */
 /* } */
-fieldset {
+.field_datpers {
 	border: 1px solid grey;
 	padding: 20px 30px;
 	margin-bottom: 20px;

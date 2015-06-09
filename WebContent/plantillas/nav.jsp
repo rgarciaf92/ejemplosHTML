@@ -210,8 +210,13 @@
 			<h3>JavaScript</h3>
 			<ul>
 				<li>
-					<a href="ejemplos/javascript/variables.jsp" title="Variables">
-					Variables
+					<a href="ejemplos/javascript/intro_js.jsp" title="Introduccion">
+					Introducci&oacute;n
+					</a>
+				</li>
+				<li>
+					<a href="ejemplos/javascript/calculadora.jsp" title="Calculadora">
+					Calculadora
 					</a>
 				</li>
 			</ul>
