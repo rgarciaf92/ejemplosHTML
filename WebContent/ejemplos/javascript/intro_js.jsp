@@ -206,6 +206,7 @@
 					
 					return precio;
 				}
+				var i=0;
 				var dia = 'martes';
 				var edad = 43;
 				var semana = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo'];
@@ -218,6 +219,9 @@
 						console.info('El valor de la entrada es de ' + entradas(dia,edad) + '\u20AC');
 						break;
 					}
+				}
+				if(i == semana.length) {
+					console.info('No existe ese dia.');
 				}
 				
 				
