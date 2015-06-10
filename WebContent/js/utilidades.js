@@ -16,41 +16,58 @@ function entradas (dia,edad) {
 	var precio = null;
 	switch (dia) {
 		case 'lunes':
-			if(edad <= 35){
-				precio = 2;
-			} else {
-				precio = 5;
+			while(edad > 0) {
+				if(edad <= 35){
+					precio = 2;
+				} else {
+					precio = 5;
+				}
+				break;
 			}
 			break;
 		case 'martes':
-			if (edad <=25) {
-				precio = 2;
-			} else if (edad > 25 && edad <= 50) {
-				precio = 5;
-			} else {
-				precio = 7;
+			while(edad > 0) {
+				if (edad <=25) {
+					precio = 2;
+				} else if (edad > 25 && edad <= 50) {
+					precio = 5;
+				} else {
+					precio = 7;
+				}
+				break;
 			}
 			break;
 		case 'miercoles':
-			if (edad <=18) {
-				precio = 3;
-			} else if (edad > 18 && edad <= 50) {
-				precio = 5;
-			} else {
-				precio = 8;
+			while(edad > 0) {
+				if (edad <=18) {
+					precio = 3;
+				} else if (edad > 18 && edad <= 50) {
+					precio = 5;
+				} else {
+					precio = 8;
+				}
+				break;
 			}
 			break;
 		case 'jueves':
-			if (edad <= 18) {
-				precio = 5;
-			} else {
-				precio = 7;
+			while(edad > 0) {
+				if (edad <= 18) {
+					precio = 5;
+				} else {
+					precio = 7;
+				}
+				break;
 			}
 			break;
 		case 'viernes':
 		case 'sabado':
 		case 'domingo':
-			precio = 10;
+			if(edad > 0) {
+				precio = 10;
+			}
+			break;
+		default:
+			precio = 'Dia y/o edad mal introducida'; //NO EXISTE ESE DIA
 			break;
 	}//end switch
 	

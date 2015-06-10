@@ -206,22 +206,26 @@
 				//testear lunes
 				console.info("lunes <35 años 2€: " + (entradas('lunes',34) == 2));
 				console.info("lunes 35 años 2€: " + (entradas('lunes',35) == 2));
-				console.info("lunes >35 años 5€: " + (entradas('lunes',36) == 5));
+				console.info("lunes >35 años 5€: " + (entradas('lunes',36) == 5) + '\n\n\n\n');
 				
 				
 				
 				
-				var i=0;
-				var dia = 'martes';
-				var edad = 43;
+				var dia = 'amartes';
+				var edad = 9;
 				var semana = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo'];
 				console.info('CINE ALEGRIA DE ALMENDRALEJO\n');
 				console.info('Dia de la semana: ' + dia + '\n');
 				console.info('Edad:' + edad + '\n');
 				
 				for(i=0; i<semana.length; i++) {
-					if(semana[i] == dia) {
-						console.info('El valor de la entrada es de ' + entradas(dia,edad) + '\u20AC');
+					if(edad > 0) {
+						if(semana[i] == dia) {
+							console.info('El valor de la entrada es de ' + entradas(dia,edad) + '\u20AC');
+							break;
+						}
+					} else {
+						console.info('Edad mal introducida');
 						break;
 					}
 				}
