@@ -15,7 +15,9 @@
 				#js_calc tr, #js_calc td{
 					text-align: center;
 				}
-				
+				#js_calc input {
+					width: 100%;
+				}
 				#calc_result #res {
 			 		border: 1px solid black;
 			  		margin-right: 45%;

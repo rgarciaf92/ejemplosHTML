@@ -15,9 +15,18 @@
   <script>
   	// Nuestro codigo de test.	
 	  QUnit.test( "entradas (dia,edad)", function( assert ) {
+		  //PRUEBAS LUNES
 		  assert.ok( entradas('lunes',34) == 2 , "lunes <35 años 2€" );
 		  assert.ok( entradas('lunes',35) == 2 , "lunes 35 años 2€" );
 		  assert.ok( entradas('lunes',36) == 5 , "lunes >35 años 5€" );
+		  
+		  //PRUEBAS MARTES
+		  assert.ok( entradas('martes',24) == 2 , "martes <25 años 2€" );
+		  assert.ok( entradas('martes',25) == 2 , "martes 25 años 2€" );
+		  assert.ok( entradas('martes',26) == 5 , "martes >25 años 5€" );
+		  assert.ok( entradas('martes',49) == 5 , "martes <50 años 5€" );
+		  assert.ok( entradas('martes',50) == 5 , "martes 50 años 5€" );
+		  assert.ok( entradas('martes',51) == 7 , "martes >50 años 7€" );
 		});
   	
 	  QUnit.test( "es_par(numero)", function( assert ) {
