@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>QUnit Example</title>
+  <title>Test para utilidades.js</title>
   <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.18.0.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
 	  QUnit.test( "entradas (lunes,edad)", function( assert ) {
 		  //PRUEBAS LUNES
 		  assert.ok( entradas('lurnes',0) == 'Dia y/o edad mal introducida', "lurnes <=0 años mal introducido" );
+		  assert.ok( entradas('lurnes','hola') == 'Dia y/o edad mal introducida', "lurnes 'hola' años mal introducido" );
 		  assert.ok( entradas('lunes',34) == 2 , "lunes <35 años 2€" );
 		  assert.ok( entradas('lunes',35) == 2 , "lunes 35 años 2€" );
 		  assert.ok( entradas('lunes',36) == 5 , "lunes >35 años 5€" );
@@ -34,7 +35,7 @@
 	  QUnit.test( "entradas (miercoles,edad)", function( assert ) {  
 		  //PRUEBAS MIERCOLES
 		  assert.ok( entradas('mieercoles',0) == 'Dia y/o edad mal introducida', "mieercoles <=0 años mal introducido" );
-		  assert.ok( entradas('miercoles',17) == 3 , "miercoles <18 años 3€" );
+		  assert.ok( entradas('miercoles',17.3) == 3 , "miercoles 17.3 <18 años 3€" );
 		  assert.ok( entradas('miercoles',18) == 3 , "miercoles 18 años 3€" );
 		  assert.ok( entradas('miercoles',19) == 5 , "miercoles >18 años 5€" );
 		  assert.ok( entradas('miercoles',49) == 5 , "miercoles <50 años 5€" );
