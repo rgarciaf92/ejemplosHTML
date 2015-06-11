@@ -519,3 +519,28 @@ nav {
 .clearfix {
 	*zoom: 1;
 }
+
+
+
+/*
+	OBJETOS BASICOS DE JAVASCRIPT
+*/
+
+#obj h2 {
+	font-size: 30px;
+	text-decoration: underline;
+	color: red;
+}
+#obj ul {
+	text-align: left;
+	margin-top:2%;
+	margin-left: 3%;
+}
+
+#obj ul li {
+	margin-bottom: 1%;
+}
+
+
+
+

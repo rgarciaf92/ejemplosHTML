@@ -1,5 +1,5 @@
-<jsp:include page="../../plantillas/head.jsp"></jsp:include>
-<jsp:include page="../../plantillas/nav.jsp"></jsp:include>
+<jsp:include page="../../../plantillas/head.jsp"></jsp:include>
+<jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
 <main id="variables_js" class="abajo_menu">
 	<section>
@@ -244,4 +244,4 @@
 </main>
 
 
-<jsp:include page="../../plantillas/footer.jsp"></jsp:include>
+<jsp:include page="../../../plantillas/footer.jsp"></jsp:include>

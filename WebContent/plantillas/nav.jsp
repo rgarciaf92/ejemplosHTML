@@ -210,19 +210,39 @@
 			<h3>JavaScript</h3>
 			<ul>
 				<li>
-					<a href="ejemplos/javascript/intro_js.jsp" title="Introduccion">
-					Introducci&oacute;n
-					</a>
+					<h4>B&aacute;sicos</h4>
+					<ul>
+						<li>
+							<a href="ejemplos/javascript/intro_js.jsp" title="Introduccion">
+							Introducci&oacute;n
+							</a>
+						</li>
+						<li>
+							<a href="ejemplos/javascript/objetos.jsp" title="Objetos">
+							Objetos
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="ejemplos/javascript/calculadora.jsp" title="Calculadora">
-					Calculadora
-					</a>
+					<h4>Plugins</h4>
+					<ul>
+						<li>
+							<a href="ejemplos/javascript/calculadora.jsp" title="Calculadora">
+							Calculadora
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li>
-					<a href="ejemplos/javascript/test.jsp" title="Test">
-					Test
-					</a>
+					<h4>Test</h4>
+					<ul>
+						<li>
+							<a href="ejemplos/javascript/test.jsp" title="Test">
+							QUnit
+							</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</li>

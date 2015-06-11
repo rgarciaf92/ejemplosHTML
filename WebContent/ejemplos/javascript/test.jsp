@@ -89,27 +89,26 @@
 		  
 		  //NUEVO ARRAY
 		  var arrayJohnWayne = new Array("El feo, el bueno y el malo",1973,"ni p idea");
-		  var arrayFinal = johnWayne.concat(arrayJohnWayne);
+		  johnWayne = johnWayne.concat(arrayJohnWayne);
 		  
 		  //CONCAT
-		  assert.ok(arrayFinal[0]== "John", "posicion 0 esta 'John'");
-		  assert.ok(arrayFinal[1]== "Wayne", "posicion 1 esta 'Wayne'");
-		  assert.ok(arrayFinal[2]== 45, "posicion 2 esta 45");
-		  assert.ok(arrayFinal[3]== "El feo, el bueno y el malo", "posicion 3 esta 'El feo, el bueno y el malo'");
-		  assert.ok(arrayFinal[4]== 1973, "posicion 4 esta 1973");
-		  assert.ok(arrayFinal[5]== "ni p idea", "posicion 5 esta 'ni p idea'");
-		  assert.ok(arrayFinal.length == 6, "Longitud del array == 6");
+		  assert.ok(johnWayne[0]== "John", "posicion 0 esta 'John'");
+		  assert.ok(johnWayne[1]== "Wayne", "posicion 1 esta 'Wayne'");
+		  assert.ok(johnWayne[2]== 45, "posicion 2 esta 45");
+		  assert.ok(johnWayne[3]== "El feo, el bueno y el malo", "posicion 3 esta 'El feo, el bueno y el malo'");
+		  assert.ok(johnWayne[4]== 1973, "posicion 4 esta 1973");
+		  assert.ok(johnWayne[5]== "ni p idea", "posicion 5 esta 'ni p idea'");
+		  assert.ok(johnWayne.length == 6, "Longitud del array == 6");
 		  
 		  //JOIN, REVERSE Y SORT
-		  assert.ok(arrayFinal.join("#") == "John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea" , "arrayFinal.join('#') sale asi: 'John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea' ");
-		  assert.ok(arrayFinal.reverse() == "ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John" , "arrayFinal.reverse() sale asi: 'ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John'");
-		  assert.ok(arrayFinal.sort() == "1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea", "arrayFinal.sort() sale asi: '1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea'");
+		  assert.ok(johnWayne.join("#") == "John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea" , "johnWayne.join('#') sale asi: 'John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea' ");
+		  assert.ok(johnWayne.reverse() == "ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John" , "johnWayne.reverse() sale asi: 'ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John'");
+		  assert.ok(johnWayne.sort() == "1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea", "johnWayne.sort() sale asi: '1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea'");
 		  
 		 	
 		  //OTRAS PRUEBAS
 		  var aNum = new Array(-5,5,3,1,0);
 		  var aLet = new Array("b","a","A","h");
-		  //document.write (aNum.reverse());
 		  //aNum
 		  assert.ok(aNum[0]== -5, "posicion 0 esta -5");
 		  assert.ok(aNum[1]== 5, "posicion 1 esta 5");
