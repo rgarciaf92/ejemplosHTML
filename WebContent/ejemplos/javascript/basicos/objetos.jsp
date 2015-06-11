@@ -63,7 +63,7 @@
 					</li>
 				</ul>				
 			</div>
-			<div id="obj_doc" class="obj">
+			<div id="obj_loc" class="obj">
 				<h2>Location</h2>
 				<ul>
 					<li>
