@@ -11,7 +11,8 @@
 /* ETIQUETAS 
 	Dar un estilo o una base general a toda la WEB */
 body {
-	background-image: url("../img/back.jpg");
+/*  	background-color: green;  */
+/* 	background-image: url("../img/back.jpg"); */
 }
 
 h1 {
@@ -37,7 +38,7 @@ a {
 }
 
 a:hover {
-	color: orange;
+	/*color: orange;*/
 }
 
 /* Recomendable para diseño de impresión */
@@ -525,22 +526,28 @@ nav {
 /*
 	OBJETOS BASICOS DE JAVASCRIPT
 */
-
-#obj h2 {
+.obj {
+	border: 1px dotted black;
+	margin-bottom: 2%;
+}
+.obj h2 {
 	font-size: 30px;
 	text-decoration: underline;
 	color: red;
+	margin-left: 1%;
 }
-#obj ul {
+.obj ul {
 	text-align: left;
 	margin-top:2%;
 	margin-left: 3%;
 }
 
-#obj ul li {
+.obj ul li {
 	margin-bottom: 1%;
 }
 
-
+#obj code {
+	font-size: 15px;
+}
 
 

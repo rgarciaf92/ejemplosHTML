@@ -213,12 +213,12 @@
 					<h4>B&aacute;sicos</h4>
 					<ul>
 						<li>
-							<a href="ejemplos/javascript/intro_js.jsp" title="Introduccion">
+							<a href="ejemplos/javascript/basicos/intro_js.jsp" title="Introduccion">
 							Introducci&oacute;n
 							</a>
 						</li>
 						<li>
-							<a href="ejemplos/javascript/objetos.jsp" title="Objetos">
+							<a href="ejemplos/javascript/basicos/objetos.jsp" title="Objetos">
 							Objetos
 							</a>
 						</li>
@@ -228,7 +228,7 @@
 					<h4>Plugins</h4>
 					<ul>
 						<li>
-							<a href="ejemplos/javascript/calculadora.jsp" title="Calculadora">
+							<a href="ejemplos/javascript/plugins/calculadora.jsp" title="Calculadora">
 							Calculadora
 							</a>
 						</li>
