@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Test para utilidades.js</title>
-  <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.18.0.css">
-</head>
-<body>
+<jsp:include page="../../plantillas/head.jsp"></jsp:include>
+<jsp:include page="../../plantillas/nav.jsp"></jsp:include>
+
+ <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.18.0.css">
+<main id="variables_js" class="abajo_menu">
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="//code.jquery.com/qunit/qunit-1.18.0.js"></script>
   
   
-  <script src="../../js/utilidades.js"></script>
+  <script src="js/utilidades.js"></script>
   <script>
   	// Nuestro codigo de test.	
 	  QUnit.test( "entradas (lunes,edad)", function( assert ) {
@@ -24,7 +21,7 @@
 	  });
 	  QUnit.test( "entradas (martes,edad)", function( assert ) {  
 		  //PRUEBAS MARTES
-		  assert.ok( entradas('marrtes',0) == 'Dia y/o edad mal introducida', "marrtes <=0 años mal introducido" );
+		  assert.ok( entradas('marrtes',10) == 'Dia y/o edad mal introducida', "marrtes 10 años mal introducido" );
 		  assert.ok( entradas('martes',24) == 2 , "martes <25 años 2€" );
 		  assert.ok( entradas('martes',25) == 2 , "martes 25 años 2€" );
 		  assert.ok( entradas('martes',26) == 5 , "martes >25 años 5€" );
@@ -70,6 +67,68 @@
 		  assert.ok( !es_par(2.1), "2.1 NO es par" );
 		  assert.ok( !es_par('hola'), "\'hola\' NO es par" );
 		});
+	  
+	  
+	  
+	  //*******************FUNCIONES PREDEFINIDAS*************************//
+	  
+	  QUnit.test( "funciones predefinidas", function( assert ) {
+		  assert.ok( escape('Hola Mundo') == 'Hola%20Mundo', "'Hola Mundo' escapado" );
+		  assert.ok( escape('Hóla Mundo') == 'H%F3la%20Mundo', "'Hóla Mundo' escapado" );
+		  assert.ok( ('10' + 1) == '101', "Sin parseInt('10') + 1 = 101" );
+		  assert.ok( parseInt('10') + 1 == 11, "Con parseInt('10') + 1 = 11" );
+		  assert.ok( isNaN("123abc"), "123abc no es un numero");
+		  assert.ok( !isNaN("123"), "123 es un numero");
+		  
+		  var johnWayne = new Array("John","Wayne",45);
+		  assert.ok(johnWayne[0]=="John", "posicion 0 esta 'John'");
+		  assert.ok(johnWayne[1]=="Wayne", "posicion 1 esta 'Wayne'");
+		  assert.ok(johnWayne[2]== 45, "posicion 2 esta 45");
+		  assert.ok(johnWayne.length == 3, "Longitud del array == 3");
+		  
+		  
+		  //NUEVO ARRAY
+		  var arrayJohnWayne = new Array("El feo, el bueno y el malo",1973,"ni p idea");
+		  var arrayFinal = johnWayne.concat(arrayJohnWayne);
+		  
+		  //CONCAT
+		  assert.ok(arrayFinal[0]== "John", "posicion 0 esta 'John'");
+		  assert.ok(arrayFinal[1]== "Wayne", "posicion 1 esta 'Wayne'");
+		  assert.ok(arrayFinal[2]== 45, "posicion 2 esta 45");
+		  assert.ok(arrayFinal[3]== "El feo, el bueno y el malo", "posicion 3 esta 'El feo, el bueno y el malo'");
+		  assert.ok(arrayFinal[4]== 1973, "posicion 4 esta 1973");
+		  assert.ok(arrayFinal[5]== "ni p idea", "posicion 5 esta 'ni p idea'");
+		  assert.ok(arrayFinal.length == 6, "Longitud del array == 6");
+		  
+		  //JOIN, REVERSE Y SORT
+		  assert.ok(arrayFinal.join("#") == "John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea" , "arrayFinal.join('#') sale asi: 'John#Wayne#45#El feo, el bueno y el malo#1973#ni p idea' ");
+		  assert.ok(arrayFinal.reverse() == "ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John" , "arrayFinal.reverse() sale asi: 'ni p idea,1973,El feo, el bueno y el malo,45,Wayne,John'");
+		  assert.ok(arrayFinal.sort() == "1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea", "arrayFinal.sort() sale asi: '1973,45,El feo, el bueno y el malo,John,Wayne,ni p idea'");
+		  
+		 	
+		  //OTRAS PRUEBAS
+		  var aNum = new Array(-5,5,3,1,0);
+		  var aLet = new Array("b","a","A","h");
+		  //document.write (aNum.reverse());
+		  //aNum
+		  assert.ok(aNum[0]== -5, "posicion 0 esta -5");
+		  assert.ok(aNum[1]== 5, "posicion 1 esta 5");
+		  assert.ok(aNum[2]== 3, "posicion 2 esta 3");
+		  assert.ok(aNum[3]== 1, "posicion 3 esta 1");
+		  assert.ok(aNum[4]== 0, "posicion 4 esta 0");
+		  assert.ok(aNum.reverse() == "0,1,3,5,-5","Numeros (-5,5,3,1,0) invertidos segun su posicion del array");
+		  assert.ok(aNum.join("#") == "0#1#3#5#-5", "Numeros (-5,5,3,1,0) juntados mediante el elemento #");
+		  assert.ok(aNum.sort() == "-5,0,1,3,5", "Numeros (-5,5,3,1,0) ordenados de menor a mayor con sort segun numero ASCII");
+		  //aLet
+		  assert.ok(aLet[0]== "b", "posicion 0 esta 'b'");
+		  assert.ok(aLet[1]== "a", "posicion 1 esta 'a'");
+		  assert.ok(aLet[2]== "A", "posicion 2 esta 'A");
+		  assert.ok(aLet[3]== "h", "posicion 3 esta 'h'");
+		  assert.ok(aLet.reverse() == "h,A,a,b","Letras ('b','a','A','h') invertidos segun su posicion del array");
+		  assert.ok(aLet.join("#") == "h#A#a#b", "Letras ('b','a','A','h') juntados mediante el elemento #");
+		  assert.ok(aLet.sort() == "A,a,b,h", "Letras ('b','a','A','h') ordenadas de menor a mayor con sort segun numero ASCII");
+		});
   </script>
-</body>
-</html>
+</main>
+
+<jsp:include page="../../plantillas/footer.jsp"></jsp:include>

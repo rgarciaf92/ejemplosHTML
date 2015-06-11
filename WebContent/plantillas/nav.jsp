@@ -219,6 +219,11 @@
 					Calculadora
 					</a>
 				</li>
+				<li>
+					<a href="ejemplos/javascript/test.jsp" title="Test">
+					Test
+					</a>
+				</li>
 			</ul>
 		</li>
 	</ul>
