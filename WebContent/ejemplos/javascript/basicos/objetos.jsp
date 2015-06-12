@@ -23,6 +23,7 @@
 					<li>
 						<strong>Window.open: </strong>
 						<input type="button" id="w_open" value="window.open(url,nombre,opciones)"/>
+						<span>*En Chrome no funciona <code>resizable=no</code> por lo cual hemos metido javascript en la ventana de cerrar.</span>
 					</li>
 					<li>
 						<strong>Window.alert: </strong>
@@ -39,6 +40,11 @@
 				</ul>				
 			</div>
 			<div id="obj_doc" class="obj">
+				<style>
+					body {
+						background-image: none !important; 
+					}
+				</style>
 				<h2>Document</h2>
 				<ul>
 					<li>
@@ -55,11 +61,11 @@
 					</li>
 					<li>
 						<strong>Images: </strong>
-						<p id="d_images"></p>
+						<input type="button" id="d_images" value="Mostrar Imagenes"/>
 					</li>
 					<li>
 						<strong>Links: </strong>
-						<p id="d_links"></p>
+						<input type="button" id="d_links" value="Mostrar Links"/>
 					</li>
 				</ul>				
 			</div>
@@ -88,6 +94,48 @@
 					</li>
 				</ul>				
 			</div>
+			<div id="obj_scr" class="obj">
+				<h2>Screen</h2>
+				<ul>
+					<li>
+						<strong>AvailHeight: </strong>
+						<span id="s_aheight"></span>
+					</li>
+					<li>
+						<strong>AvailWidth: </strong>
+						<span id="s_awidth"></span>
+					</li>
+					<li>
+						<strong>Width: </strong>
+						<span id="s_width"></span>
+					</li>
+					<li>
+						<strong>Height: </strong>
+						<span id="s_height"></span>
+					</li>
+					<li>
+						<strong>ColorDepth: </strong>
+						<span id="s_coldep"></span>
+					</li>
+				</ul>				
+			</div>
+			<div id="obj_nav" class="obj">
+				<h2>Navigator</h2>
+				<ul>
+					<li>
+						<strong>Language: </strong>
+						<span id="n_lang"></span>
+					</li>
+					<li>
+						<strong>UserAgent: </strong>
+						<span id="n_user"></span>
+					</li>
+					<li>
+						<strong>CookieEnabled: </strong>
+						<span id="n_cook"></span>
+					</li>
+				</ul>				
+			</div>
 			<footer>
 				<p>Capitulo 13 Pags 304...320</p>
 			</footer>
@@ -103,7 +151,7 @@
 				//Obtener boton
 				var btn_w_open = document.getElementById("w_open");
 				btn_w_open.onclick = function(){
-						window.open("ejemplos/javascript/basicos/cierra_ventana.jsp","Cerrar Ventana","menubar=no,toolbar=no");
+						window.open("ejemplos/javascript/basicos/cierra_ventana.jsp","Cerrar Ventana","menubar=no,toolbar=no,resizable=no,scrollbars=no");
 				}
 				
 				//Alert
@@ -126,10 +174,14 @@
 				var btn_w_prompt = document.getElementById("w_prompt");
 				btn_w_prompt.onclick = function() {
 					var texto = window.prompt("Dime tu nombre:","");
-					if(confirm("Tu nombre es " + texto + "?")) {
-						alert("Tu nombre es " + texto);
+					if(texto != null) {
+						if(confirm("Tu nombre es " + texto + "?")) {
+							alert("Tu nombre es " + texto);
+						} else {
+							alert("No has aceptado.");
+						}
 					} else {
-						alert("No has aceptado.");
+						alert("Gracias por no poner nada.")
 					}
 				}
 
@@ -146,25 +198,36 @@
 				}
 				
 				//LinkColor ALinkColor VLinkColor
-				document.linkColor = "#000CC";
-				document.alinkColor = "#00000";
-				document.vlinkColor = "#00000";
+				document.linkColor = "#BB10FF";
+				document.alinkColor = "#000000";
+				document.vlinkColor = "#AABBCC";
 
 				//Images
-				var d_image = document.getElementById("d_images");
-				var txtImage = "";
-				for (i = 0; i < document.images.length; i++) {
-					txtImage = txtImage + document.images[i].src + "<br>";
-				}
-				d_image.innerHTML = txtImage;
+				var btn_d_image = document.getElementById("d_images");
+				btn_d_image.onclick = function() {
+					var txtImage = "Este documento tiene " + document.images.length + " imagen/es.\n";
+					//Recorremos el array de imagenes para leer todos los src de las imagenes
+					for (i = 0; i < document.images.length; i++) {
+						//Salimos del array al completar 5 imagenes
+						if (i==5) break;
+						txtImage += document.images[i].src + "\n";
+						
+					}
+					alert(txtImage);
+				}				
 
 				//Links
-				var d_link = document.getElementById("d_links");
-				var txtLinks = "";
-				for (i = 0; i < document.links.length; i++) {
-					txtLinks = txtLinks + document.links[i].href + "<br>";
+				var btn_d_links = document.getElementById("d_links");
+				btn_d_links.onclick = function() {
+					var txtLinks = "Este documento tiene " + document.links.length + " enlace/s.\n";
+					//Recorremos el array de links para leer todos los href de los links
+					for (i = 0; i < document.links.length; i++) {
+						//Salimos del array al completar 5 enlaces
+						if(i==5) break;
+						txtLinks = txtLinks + document.links[i].href + "\n";
+					}
+					alert(txtLinks);
 				}
-				d_link.innerHTML = txtLinks;
 
 				/******************* LOCATION ************************/
 				//Host
@@ -186,6 +249,41 @@
 				//Href
 				var l_href = document.getElementById("l_href");
 				l_href.innerHTML = location.hostname;
+				
+				/******************* SCREEN ************************/
+				//AvailHeight
+				var s_aheight = document.getElementById("s_aheight");
+				s_aheight.innerHTML = screen.availHeight;
+				
+				//AvailWidth
+				var s_awidth = document.getElementById("s_awidth");
+				s_awidth.innerHTML = screen.availWidth;
+				
+				//Width
+				var s_width = document.getElementById("s_width");
+				s_width.innerHTML = screen.width;
+				
+				//Height
+				var s_height = document.getElementById("s_height");
+				s_height.innerHTML = screen.height;
+				
+				//ColorDepth
+				var s_coldep = document.getElementById("s_coldep");
+				s_coldep.innerHTML = screen.colorDepth;
+				
+				/******************* NAVIGATOR ************************/
+				//Language
+				var n_lang = document.getElementById("n_lang");
+				n_lang.innerHTML = navigator.language;
+				
+				//UserAgent
+				var n_user = document.getElementById("n_user");
+				n_user.innerHTML = navigator.userAgent;
+				
+				//CookieEnabled
+				var n_cook = document.getElementById("n_cook");
+				n_cook.innerHTML = navigator.cookieEnabled;
+				
 			</script>
 		</article>
 	</section>

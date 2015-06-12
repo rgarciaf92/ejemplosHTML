@@ -10,9 +10,8 @@
 
 /* ETIQUETAS 
 	Dar un estilo o una base general a toda la WEB */
-body {
-/*  	background-color: green;  */
-/* 	background-image: url("../img/back.jpg"); */
+body {  
+ 	background-image: url("../img/back.jpg"); 
 }
 
 h1 {
@@ -546,7 +545,7 @@ nav {
 	margin-bottom: 1%;
 }
 
-#obj code {
+.obj code {
 	font-size: 15px;
 }
 

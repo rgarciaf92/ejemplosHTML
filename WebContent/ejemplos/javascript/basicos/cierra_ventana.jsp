@@ -1,6 +1,15 @@
 <jsp:include page="../../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
+ <script type="text/javascript">
+	window.onresize = function() {
+		window.resizeTo(500,500);
+	}
+	window.onclick = function() {
+		window.resizeTo(500,500);
+	}
+</script>
+
 <main id="variables_js" class="abajo_menu">
 	<section>
 		<h2>JavaScript</h2>
