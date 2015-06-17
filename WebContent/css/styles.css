@@ -70,6 +70,9 @@ legend {
 	font-weight: bold;
 }
 
+em {
+	font-weight: bold;
+}
 
 article {
 	border: 1px solid #013720;

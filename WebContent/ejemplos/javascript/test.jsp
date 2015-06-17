@@ -11,6 +11,26 @@
   <script src="js/utilidades.js"></script>
   <script>
   	// Nuestro codigo de test.	
+  	
+  	   QUnit.test( "Date - fechas", function( assert ) {
+  		   
+	  		var fecha = new Date(2015,5,15);
+	  		   
+	  		assert.ok( convertirFecha(fecha,CORTO) == '15/06/2015', "fecha corta");
+	  		assert.ok( convertirFecha(fecha,LARGO) == 'El 15 de junio del 2015', "fecha larga");
+	  		
+	  		assert.ok( convertirFecha(fecha,'formato no valido') == null , "formato de fecha invalido");
+	  		assert.ok( convertirFecha(null,CORTO) == null , "fecha nula");
+	  		assert.ok( convertirFecha(undefined,CORTO) == null , "fecha undefined");
+	  		assert.ok( convertirFecha('43/ff/2011',CORTO) == null , "fecha no correcta");
+	  		
+	  		
+  		   
+  	   });
+  	
+  	
+  	
+  	
 	  QUnit.test( "entradas (lunes,edad)", function( assert ) {
 		  //PRUEBAS LUNES
 		  assert.ok( entradas('lurnes',0) == 'Dia y/o edad mal introducida', "lurnes <=0 años mal introducido" );
